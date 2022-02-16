@@ -1,0 +1,265 @@
+* {
+    margin: 0.1rem 0.1rem;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* landing page */
+
+.landing-page {
+    height: 90vh;
+    background-color: gray;
+    border-top: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    margin-top: 1rem;
+}
+
+.landing-page nav {
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem;
+    color: #fff;
+}
+
+.landing-page nav h3 {
+    display: flex;
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.landing-page__navigation,
+ul a {
+    color: #fff;
+    background-color: #333333;
+    padding: 1.2rem;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.landing-page__navigation,
+a:hover {
+    background-color: transparent;
+}
+
+.landing-page ul,
+li {
+    list-style: none;
+    display: flex;
+    margin: 1.4rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.landing-page__writeup {
+    display: grid;
+    grid-template: ". heading ." auto ". paragraph ." 1fr / 1fr 65ch 1fr;
+}
+
+.landing-page__heading {
+    padding-top: 4rem;
+    font-size: 5rem;
+    line-height: 1.3;
+    color: #fff;
+    display: grid;
+    grid-area: heading;
+}
+
+.landing-page__paragraph {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: grid;
+    grid-area: paragraph;
+}
+
+
+/* about me */
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me__heading {
+    /* grid-area: heading; */
+    font-size: 3.4rem;
+    padding: 1.5rem;
+    color: rgb(61, 60, 60);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-me__paragraph-heading {
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    color: rgb(61, 60, 60);
+    padding-bottom: 2.5rem;
+}
+
+.about-me__paragraph {
+    padding: 0rem 2rem;
+    line-height: 2;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: inline;
+}
+
+.about-me p a {
+    color: rgb(0, 32, 0);
+    display: inline;
+}
+
+.about-me__list {
+    padding: 5rem 12rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.about-me__list-items {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-me__list-items li {
+    color: #333333;
+}
+
+.about-me__list-heading {
+    padding: 1rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: rgb(61, 60, 60);
+}
+
+
+/* portfolio section */
+
+.portfolio {
+    height: auto;
+    display: grid;
+    grid-template: "heading heading heading" auto "card-one card-two card-three" 1fr / 1fr 1fr 1fr;
+    padding: 2rem 2rem;
+    border-top: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+}
+
+.heading {
+    display: grid;
+    grid-area: heading;
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-one,
+.card-two,
+.card-three {
+    display: grid;
+    grid-template: "title" auto "paragraph" 1fr "button" 2.5rem "link" 3rem/ 1fr;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    margin-bottom: 3rem;
+    background-color: rgb(137, 137, 137);
+    color: rgb(19, 18, 18);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.card-one,
+.card-two,
+.card-three,
+h2 {
+    display: grid;
+    grid-area: title;
+    padding: 1.6rem;
+}
+
+.card-one,
+.card-two,
+.card-three,
+p {
+    display: grid;
+    grid-area: paragraph;
+    margin: 1rem;
+}
+
+.card-one {
+    grid-area: card-one;
+}
+
+.card-two {
+    grid-area: card-two;
+}
+
+.card-three {
+    grid-area: card-three;
+}
+
+.portfolio button {
+    display: grid;
+    grid-area: button;
+    justify-content: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.portfolio a {
+    display: grid;
+    grid-area: link;
+    place-items: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 20rem;
+}
+
+.experience h2 {
+    font-size: 3rem;
+}
+
+.experience h3 {
+    padding: 1.6rem;
+    font-size: 2.2rem;
+}
+
+.experience p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    height: 6rem;
+    padding: 0rem 2rem;
+    font-weight: 400;
+}
